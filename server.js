@@ -10,6 +10,7 @@ app.post('/data', (req, res) => {
 
     if (req.body.event == "send_cookie") {
         console.log(req.body.cookie);
+        res.json({status: ok})
     }
 });
 
